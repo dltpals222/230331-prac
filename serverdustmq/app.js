@@ -30,8 +30,8 @@ class Server {
         res.writeHead(500, {'content-type':'text/plain'});
         res.end('500 Error 서버에 문제가 있습니다.');
       } else {
-        res.wirteHead(200, {'content-type':'text/html'})
-        res.write(data)
+        res.wirteHead(200, {'content-type':'text/html'});
+        res.write(data);
         res.end();
       }
     })
@@ -46,7 +46,7 @@ class Server {
       console.log(body);
       res.wirteHead(200, {'content-type':'text/html'});
       res.write(`<h1>${body}</h1>`);
-      res.end()
+      res.end();
     })
   }
   }
